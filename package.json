@@ -1,0 +1,46 @@
+{
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --mode development",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "lint:eslint": "vue-tsc --noEmit && eslint \"src/**/*.{vue,ts,tsx,js,jsx}\" --fix",
+    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,tsx,css,less,scss,vue,html,md}\"",
+    "lint": "eslint \"src/**/*.{vue,ts,tsx,js,jsx}\"",
+    "lint:lint-staged": "lint-staged -c ../.husky/lint-staged.config.js",
+    "lint:pretty": "pretty-quick --staged",
+    "prepare": "cd .. && husky install vue3_eslint_prettier/.husky"
+  },
+  "dependencies": {
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@types/lodash-es": "^4.17.4",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "@vitejs/plugin-vue": "^1.2.3",
+    "@vue/compiler-sfc": "^3.0.5",
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "echarts": "^5.1.1",
+    "eslint": "^7.27.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^7.10.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "lodash-es": "^4.17.21",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.3.0",
+    "pretty-quick": "^3.1.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.3.5",
+    "vite-plugin-mock": "^2.7.0",
+    "vue-eslint-parser": "^7.6.0",
+    "vue-tsc": "^0.1.7",
+    "xlsx": "^0.17.0"
+  }
+}
