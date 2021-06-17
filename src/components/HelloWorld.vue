@@ -2,13 +2,13 @@
   <div>
     <h1>{{ msg }}</h1>
 
-    <p>
+    <!-- <p>
       <a href="https://vitejs.dev/guide/features.html" target="_blank">
         Vite Documentatio啊实打实的sdasdasdasdasdasdasdn
       </a>
       |
       <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
-    </p>
+    </p> -->
     <div id="main" style="width: 1000px; height: 400px"></div>
     <button @click="handleOutput">导出数据</button>
     <button @click="handleRefresh">刷新</button>

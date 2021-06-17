@@ -13,11 +13,12 @@ export default ({ command, mode }) => {
       vue(),
       viteMockServe({
         mockPath: 'mockPlugin',
+        supportTs: true,
         localEnabled: command === 'serve',
         prodEnabled: command !== 'serve' && prodMock,
         //  这样可以控制关闭mock的时候不让mock打包到最终代码内
         injectCode: `
-          import { setupProdMockServer } from './mockProdServer';
+          import { setupProdMockServer } from './mockProServer';
           setupProdMockServer();
         `,
       }),
